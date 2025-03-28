@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-    --bg--black-900:#f2f2fc;
+    --bg--black-900:#f2f2fc; 
     --bg--black-100:#fdf9ff;
     --bg--black-50:#e8dfec;
     --text--black-900:#302e4d;
@@ -17,7 +17,7 @@ body.dark{
 }
 
 body {
-    line-height: 1.5;
+    line-height: 1.5; 
     font-size: 16px;
     font-family:'Poppins' sans-serif;
 }
@@ -26,20 +26,20 @@ body {
     margin: 0;
     padding: 0;
     outline: none;
-    text-decoration:none;
+    text-decoration:none; 
     box-sizing: border-box;
 }
 
 ::before,::after {
-   box-sizing: border-box; 
+   box-sizing: border-box;  /*Se pone para determinar el tamaño de la caja*/
 }
 
 ul {
-    list-style: none;
+    list-style: none;/*Este establece el tipo de viñeta para la lista */
 }
 .section {
     background: var(--bg--black-900);
-    min-height: 100vh;
+    min-height: 100vh;/* establece la altura de una casilla remarcada por líneas.*/
     display: block;
     padding: 0 30px;
     opacity: 1;
@@ -49,12 +49,12 @@ ul {
 
 
 .main-content {
-    padding-left: 270px;
+    padding-left: 270px;/* se pone para saber cuanto espacio se debe  colocar entre el borde izquierdo */
 }
 
 .padd-15 {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;/* se pone para saber cuanto espacio se debe  colocar entre el borde derecho*/
 }
 
 .container {
@@ -75,14 +75,14 @@ ul {
 }
 
 .section-title h2 {
-    font-size: 40px;
+    font-size: 40px;/* sirve para especificar la dimensión de la letra.*/
     color: var(--text--black-900);
     font-weight: 700;
     position: relative;
 }
 
 .section-title h2::before {
-    content: '';
+    content: '';/*este genera nuevo contenido de forma dinámica */
     height: 4px;
     width: 50px;
     background-color: var(--skin-color);
@@ -92,14 +92,14 @@ ul {
 }
 
 .section-title h2::after {
-    content: '';
+    content: '';/*este genera nuevo contenido de forma dinámica */
     height: 4px;
     width: 25px;
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
     left: 0;
-    margin-top: 8px;
+    margin-top: 8px;/*establece el margen superior */
 }
 
 
@@ -112,7 +112,7 @@ ul {
 }
 
 .btn {
-    font-size: 16px;
+    font-size: 16px;/*Permite determinar como se colocarán los elementos verticalmente*/
     font-weight: 500;
     padding: 12px 35px ;
     color: white;
@@ -130,7 +130,7 @@ ul {
 }
 
 .shadow-dark {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.25);
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.25); /*añade efectos de sombra alrededor del marco de un elemento*/
 }
 
 /* Aside */
@@ -151,7 +151,7 @@ ul {
 }
 
 .aside .logo {
-    position: absolute;
+    position: absolute;/*especifica cómo un elemento es posicionado en el documento.*/
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
@@ -525,7 +525,7 @@ h3.my-profession {
 }
 
 .about .about-content .timeline .timeline-title {
-    font-weight: 700;
+    font-weight: 700;/*es la propiedad que nos permite que un texto especifico sea más grueso o fino.*/
     font-size: 18px;
     margin: 15px;
     text-transform: capitalize;
@@ -535,7 +535,7 @@ h3.my-profession {
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
-    text-align: justify;
+    text-align: justify;/*sirve para poner algun elemento como texto centrado */
     color: var(--text--black-700);
 }
 
@@ -556,7 +556,7 @@ h3.my-profession {
     border: 1px solid var(--bg--black-50);
     border-radius: 10px;
     padding: 30px 15px;
-    text-align: center;
+    text-align: center;/*sirve para poner algun elemento como texto centrado */
 
 }
 
@@ -570,7 +570,7 @@ h3.my-profession {
     border-radius: 50%;
     display: block;
     margin: 0 auto 30px;
-    text-align: center;
+    text-align: center;/*sirve para poner algun elemento como texto centrado */
     transition: all 0.3s ease;
 }
 
@@ -631,7 +631,7 @@ h3.my-profession {
 .portfolio .portfolio-item-inner {
     border: 6px solid var(--bg--black-100);
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden;/*nos permite controlar el contenido que se encuentra en una caja o contenedor*/
     cursor: pointer;
     text-align: center;
 }
@@ -641,18 +641,33 @@ h3.my-profession {
     display: block;
 }
 
+
+.portfolio-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--bg--black-50));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+}
 /* Contacts */
 
 .contact-title {
     color: var(--skin-color);
-    text-align: center;
+    text-align: center; /*sirve para poner algun elemento como texto centrado */
     font-size: 25px;
     margin-bottom: 20px;
 }
 
 .contact-sub-title {
     color: var(--text--black-900);
-    text-align: center;
+    text-align: center;/*sirve para poner algun elemento como texto centrado */
     font-size: 15px;
     margin-bottom: 60px;
 }
@@ -660,7 +675,7 @@ h3.my-profession {
 .contact .contact-info-item {
     flex: 0 0 25%;
     max-width: 25%;
-    text-align: center;
+    text-align: center; /*sirve para poner algun elemento como texto centrado */
     margin-bottom: 60px;
 }
 
@@ -669,20 +684,20 @@ h3.my-profession {
 }
 
 .contact .contact-info-item .icon .fa {
-    font-size: 25px;
+    font-size: 25px;/*especifica la dimensión de la letra.*/
     color: var(--skin-color);
 }
 
 .contact .contact-info-item  h4 {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 18px;/*especifica la dimensión de la letra.*/
+    font-weight: 700;/*es la propiedad que nos permite que un texto especifico sea más grueso o fino.*/
     color: var(--text-black-900);
     text-transform: capitalize;
     margin: 15px 0 5px;
 }
 
 .contact .contact-info-item p {
-    font-size: 16px;
+    font-size: 16px;/*especifica la dimensión de la letra.*/
     line-height: 25x;
     color: var(--text--black-700);
     font-weight: 400;
@@ -734,7 +749,7 @@ h3.my-profession {
     padding: 0 50px;
 }
 
-@media (max-width:1199px) {
+@media (max-width:1199px) {/*sirve para ponerse responsil*/
     .aside{ 
         left: -270px;
     }
@@ -747,7 +762,7 @@ h3.my-profession {
     }
 }
 
-@media (max-width:991px) {
+@media (max-width:991px) {/*sirve para ponerse responsil*/
     .home .home-info,
      .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -766,7 +781,7 @@ h3.my-profession {
     }
 }
 
-@media (max-width:767px){
+@media (max-width:767px){ /*sirve para ponerse responsil*/
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
